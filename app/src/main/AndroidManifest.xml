@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.mounika.shareyourride">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <activity android:name="com.project.mounika.shareyourride.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.project.mounika.shareyourride.RegisterActivity"/>
+        <activity android:name="com.project.mounika.shareyourride.HomeActivity"/>
+        <activity android:name="com.project.mounika.shareyourride.SearchActivity"  android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.project.mounika.shareyourride.OfferActivity"  android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.project.mounika.shareyourride.ViewTripsActivity"  android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.project.mounika.shareyourride.CancelActivity"  android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.project.mounika.shareyourride.UpdateActivity"  android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.project.mounika.shareyourride.RideConfirmationActivity"  android:windowSoftInputMode="adjustResize"/>
+    </application>
+
+</manifest>

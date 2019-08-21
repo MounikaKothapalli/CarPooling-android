@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:background="@layout/gradient_header">
+
+ <LinearLayout android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip"
+
+     android:gravity="center"
+    android:layout_below="@id/header">
+     <TextView
+         android:text="Share Your Ride"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/header"
+        android:gravity="center"
+         android:textSize="24dp"
+         android:textColor="#96000000"
+         />
+
+     <ImageView
+         android:id="@+id/imageView"
+         android:layout_width="150dp"
+         android:layout_height="150dp"
+         android:layout_marginTop="24dp"
+         android:background="@drawable/logo"
+         android:gravity="center" />
+    <!--  Email Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#372c24"
+        android:text="Email"/>
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:id="@+id/userName"
+        android:layout_marginBottom="20dip"
+        android:singleLine="true"
+        />
+    <!--  Password Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#372c24"
+        android:text="Password"/>
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:singleLine="true"
+        android:id="@+id/LoginPass"
+        android:password="true"/>
+    <!-- Login button -->
+    <Button android:id="@+id/btnLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:onClick="login"
+        android:text="Login"/>
+    <!-- Link to Registration Screen -->
+    <TextView android:id="@+id/link_to_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:layout_marginBottom="40dip"
+        android:text="New to ShareYourRide? Register here"
+        android:gravity="center"
+        android:textSize="20dip"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>
+</ScrollView>
