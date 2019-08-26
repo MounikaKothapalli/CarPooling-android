@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@layout/gradient_header">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+android:layout_weight="100"
+    android:layout_height="match_parent"
+   android:layout_gravity="center" >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="30">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ride"
+        />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="70"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-9dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:transitionName="bgTimer"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+
+                <ImageView
+                    android:id="@+id/timeImg"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:transitionName="icTimer"
+                    app:srcCompat="@drawable/search" />
+
+                <TextView
+                    android:id="@+id/searchtext"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Search a Ride"
+                    android:transitionName="txtTimer" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/offerImg"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:transitionName="icTimer"
+                    app:srcCompat="@drawable/offer" />
+
+                <TextView
+                    android:id="@+id/offerText"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Offer a Ride"
+                    android:transitionName="txtGame" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Update"
+            android:background="#b3cccc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/offer"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:transitionName="bgGame"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/updateImg"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:transitionName="icTimer"
+                    app:srcCompat="@drawable/update" />
+
+
+                <TextView
+                    android:id="@+id/updateMyDetails"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Update My Details"
+                    android:transitionName="txtGame" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view"
+            android:background="#b3cccc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Update"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:transitionName="bgGame"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="12dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/viewImg"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:transitionName="icTimer"
+                    app:srcCompat="@drawable/view" />
+
+                <TextView
+                    android:id="@+id/ViewTrips"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="View Trips"
+                    android:transitionName="txtGame" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>
