@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@layout/gradient_header">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:text="Registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="#96000000"
+            />
+        <!-- Name Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="Name"/>
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="20dip"
+            android:singleLine="true"/>
+        <!--Phone Label -->
+        <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#372c24"
+        android:text="Phone Number"/>
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:id="@+id/phn"
+            android:inputType="phone"
+            android:digits="0123456789"
+            android:ems="10"
+            android:layout_marginBottom="20dip"
+            android:singleLine="true"/>
+        <!-- Email Label -->
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="Email"/>
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:id="@+id/RegEmail"
+            android:layout_marginBottom="20dip"
+            android:singleLine="true"/>
+        <!--  Password Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="Password"/>
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:id="@+id/pwd"
+            android:password="true"/>
+        <!-- Login button -->
+        <Button android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Create an Account"/>
+        <!-- Link to Registration Screen -->
+        <TextView android:id="@+id/link_to_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:layout_marginBottom="40dip"
+            android:text="Already have an account? Login"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+</ScrollView>
